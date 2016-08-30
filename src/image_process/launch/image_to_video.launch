@@ -1,0 +1,9 @@
+<launch>
+    <!--convert ROS image topic to video-->
+    <node pkg="image_process" type="image_to_video_node" name="image_to_video" output="screen"/>
+	<param name="image_input_topic" type="string" value="/mv_26804026/image_rect_color"/>
+	<param name="isColor" type="int" value="1"/>
+	<param name="fps" type="int" value="20"/>
+	<param name="width" type="int" value="752"/>
+	<param name="height" type="int" value="480"/>
+</launch>

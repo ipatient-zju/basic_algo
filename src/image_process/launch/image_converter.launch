@@ -1,0 +1,6 @@
+<launch>
+    <!--convert ROS image topic to OpenCV image and draw a circle-->
+    <node pkg="image_process" type="image_converter_node" name="image_converter" output="screen"/>
+	<param name="image_input_topic" type="string" value="/mv_26804026/image_rect_color"/>
+</launch>
+
