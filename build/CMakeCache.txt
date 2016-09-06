@@ -191,6 +191,9 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Path to a program.
 DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
 
+//Path to a file.
+EIGEN3_INCLUDE_DIR:PATH=/usr/include/eigen3
+
 //Path to a program.
 EMPY_EXECUTABLE:FILEPATH=/usr/bin/empy
 
@@ -280,6 +283,12 @@ cpp_common_DIR:PATH=/opt/ros/indigo/share/cpp_common/cmake
 //The directory containing a CMake configuration file for cv_bridge.
 cv_bridge_DIR:PATH=/opt/ros/indigo/share/cv_bridge/cmake
 
+//Value Computed by CMake
+frame_conversion_BINARY_DIR:STATIC=/home/aicrobo/basic_algo/build/frame_conversion
+
+//Value Computed by CMake
+frame_conversion_SOURCE_DIR:STATIC=/home/aicrobo/basic_algo/src/frame_conversion
+
 //The directory containing a CMake configuration file for geometry_msgs.
 geometry_msgs_DIR:PATH=/opt/ros/indigo/share/geometry_msgs/cmake
 
@@ -309,6 +318,12 @@ gtest_force_shared_crt:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Value Computed by CMake
+image_calibration_BINARY_DIR:STATIC=/home/aicrobo/basic_algo/build/image_calibration
+
+//Value Computed by CMake
+image_calibration_SOURCE_DIR:STATIC=/home/aicrobo/basic_algo/src/image_calibration
+
+//Value Computed by CMake
 image_process_BINARY_DIR:STATIC=/home/aicrobo/basic_algo/build/image_process
 
 //Value Computed by CMake
@@ -323,8 +338,14 @@ image_to_video_SOURCE_DIR:STATIC=/home/aicrobo/basic_algo/src/image_to_video
 //The directory containing a CMake configuration file for image_transport.
 image_transport_DIR:PATH=/opt/ros/indigo/share/image_transport/cmake
 
+//Value Computed by CMake
+image_undistort_BINARY_DIR:STATIC=/home/aicrobo/basic_algo/build/image_undistort
+
+//Value Computed by CMake
+image_undistort_SOURCE_DIR:STATIC=/home/aicrobo/basic_algo/src/image_undistort
+
 //Path to a library.
-lib:FILEPATH=/opt/ros/indigo/lib/libcv_bridge.so
+lib:FILEPATH=/opt/ros/indigo/lib/libroslib.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/indigo/share/message_filters/cmake
@@ -334,6 +355,9 @@ message_runtime_DIR:PATH=/opt/ros/indigo/share/message_runtime/cmake
 
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/indigo/share/pluginlib/cmake
+
+//The directory containing a CMake configuration file for ros_cpp.
+ros_cpp_DIR:PATH=ros_cpp_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/indigo/share/rosconsole/cmake
@@ -470,7 +494,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=3
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -511,6 +535,10 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: EIGEN3_INCLUDE_DIR
+EIGEN3_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//Details about finding Eigen3
+FIND_PACKAGE_MESSAGE_DETAILS_Eigen3:INTERNAL=[/usr/include/eigen3][TRUE][v(2.91.0)]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.6()]
 //Details about finding Threads

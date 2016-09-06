@@ -8,8 +8,11 @@ ProjectRootRelative=./
 
 [CMake][CMake Build Directory 0]
 Build Directory Path=file:///home/aicrobo/basic_algo/build
-Build Type=Debug
+Build Type=
 CMake Binary=file:///usr/bin/cmake
 Environment Profile=
 Extra Arguments=-DCATKIN_DEVEL_PREFIX=../devel -DCMAKE_INSTALL_PREFIX=../install
-Install Directory=
+Install Directory=file:///home/aicrobo/basic_algo/install
+
+[Project]
+VersionControlSupport=kdevgit

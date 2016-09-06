@@ -1,0 +1,15 @@
+<launch>
+    <!--camera info read node-->
+    <arg name="calib_path" default="/home/aicrobo/basic_algo/src/image_undistort/config/example_chain.yaml"/>
+    <rosparam file="$(arg calib_path)"/>
+    <node pkg="image_undistort" type="camera_info_read_node" name="camera_info_read" output="screen" clear_params="true">
+	<param name="cam_ns" value="cam0"/>
+    </node>
+
+    <!--image undistort node-->
+    <node pkg="image_undistort" type="image_undistort_node" name="image_undistort"  output="screen" clear_params="true">
+	<remap from="image" to="/cam0/image_raw"/>
+	<param name="zoom" value="1.0"/>
+    </node>
+
+</launch>

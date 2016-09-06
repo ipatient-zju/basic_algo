@@ -117,7 +117,10 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/aicrobo/basic_algo/build/gtest/cmake_install.cmake")
+  INCLUDE("/home/aicrobo/basic_algo/build/frame_conversion/cmake_install.cmake")
+  INCLUDE("/home/aicrobo/basic_algo/build/image_calibration/cmake_install.cmake")
   INCLUDE("/home/aicrobo/basic_algo/build/image_process/cmake_install.cmake")
+  INCLUDE("/home/aicrobo/basic_algo/build/image_undistort/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

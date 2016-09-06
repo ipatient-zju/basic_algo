@@ -1,2 +1,2 @@
-image_process
+frame_conversion:image_calibration:image_process:image_undistort
 -DCATKIN_DEVEL_PREFIX=/home/aicrobo/basic_algo/devel -DCMAKE_INSTALL_PREFIX=/home/aicrobo/basic_algo/install -G Unix Makefiles

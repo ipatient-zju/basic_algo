@@ -1,0 +1,8 @@
+prefix=/home/aicrobo/basic_algo/devel
+
+Name: frame_conversion
+Description: Description of frame_conversion
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/aicrobo/basic_algo/devel/lib 
+Requires: 

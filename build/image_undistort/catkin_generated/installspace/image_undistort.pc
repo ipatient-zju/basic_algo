@@ -1,0 +1,8 @@
+prefix=/home/aicrobo/basic_algo/install
+
+Name: image_undistort
+Description: Description of image_undistort
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/aicrobo/basic_algo/install/lib 
+Requires: 

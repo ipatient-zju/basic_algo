@@ -1,0 +1,8 @@
+prefix=/home/aicrobo/basic_algo/devel
+
+Name: image_calibration
+Description: Description of image_calibration
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/aicrobo/basic_algo/devel/lib 
+Requires: 
