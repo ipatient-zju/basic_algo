@@ -1,0 +1,8 @@
+prefix=/home/aicrobo/basic_algo/install
+
+Name: sensor_fusion_core
+Description: Description of sensor_fusion_core
+Version: 0.0.0
+Cflags: -I/home/aicrobo/basic_algo/install/include
+Libs: -L/home/aicrobo/basic_algo/install/lib -lsensor_fusion_core
+Requires: roscpp sensor_msgs dynamic_reconfigure sensor_fusion_comm

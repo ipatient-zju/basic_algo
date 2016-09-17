@@ -117,10 +117,16 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/aicrobo/basic_algo/build/gtest/cmake_install.cmake")
+  INCLUDE("/home/aicrobo/basic_algo/build/sensor_fusion/sensor_fusion/cmake_install.cmake")
   INCLUDE("/home/aicrobo/basic_algo/build/frame_conversion/cmake_install.cmake")
+  INCLUDE("/home/aicrobo/basic_algo/build/path_output/cmake_install.cmake")
+  INCLUDE("/home/aicrobo/basic_algo/build/ransac_line/cmake_install.cmake")
   INCLUDE("/home/aicrobo/basic_algo/build/image_calibration/cmake_install.cmake")
   INCLUDE("/home/aicrobo/basic_algo/build/image_process/cmake_install.cmake")
   INCLUDE("/home/aicrobo/basic_algo/build/image_undistort/cmake_install.cmake")
+  INCLUDE("/home/aicrobo/basic_algo/build/sensor_fusion/sensor_fusion_common/cmake_install.cmake")
+  INCLUDE("/home/aicrobo/basic_algo/build/sensor_fusion/sensor_fusion_core/cmake_install.cmake")
+  INCLUDE("/home/aicrobo/basic_algo/build/sensor_fusion/sensor_fusion_updates/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

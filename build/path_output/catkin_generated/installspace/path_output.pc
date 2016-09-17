@@ -1,0 +1,8 @@
+prefix=/home/aicrobo/basic_algo/install
+
+Name: path_output
+Description: Description of path_output
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/aicrobo/basic_algo/install/lib 
+Requires: 

@@ -42,12 +42,12 @@ int main(int argc, char** argv)
     nh.param("image_input_topic",image_input_topic,string("/mv_26804026/image_rect_color"));
     nh.param("isColor",isColor,1);
     nh.param("fps",fps,30);
-    nh.param("width",width,640);
+    nh.param("width",width,752);
     nh.param("height",height,480);
     int count = 1;
     
     ros::Subscriber image_sub = nh.subscribe(image_input_topic.c_str(),10,imageCallback);
-    cv::VideoWriter avi_writer("/home/aicrobo/out.avi",CV_FOURCC('P','I','M','1'),fps,cvSize(width,height),isColor);
+    cv::VideoWriter avi_writer("/home/aicrobo/out1.avi",CV_FOURCC('P','I','M','1'),fps,cvSize(width,height),isColor);
     /***
      *	CV_FOURCC('P', 'I', 'M', '1') = MPEG-1 codec
 	CV_FOURCC('M', 'J', 'P', 'G') = motion-jpeg codec

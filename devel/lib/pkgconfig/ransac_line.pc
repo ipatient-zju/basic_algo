@@ -1,0 +1,8 @@
+prefix=/home/aicrobo/basic_algo/devel
+
+Name: ransac_line
+Description: Description of ransac_line
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/aicrobo/basic_algo/devel/lib 
+Requires: 
